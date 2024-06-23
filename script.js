@@ -112,3 +112,6 @@ function updateMoves() {
 }
 
 startGame();
+// Add touch events for mobile support
+cardElement.addEventListener('click', () => flipCard(cardElement, index));
+cardElement.addEventListener('touchstart', () => flipCard(cardElement, index));
