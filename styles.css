@@ -53,11 +53,12 @@ body {
     width: calc(20% - 10px); /* Adjust card width based on container width */
     max-width: 150px; /* Limit maximum card width */
     height: 120px; /* Adjust card height for mobile */
-    background-size: contain; /* Ensure image fits within the card */
+    background-size: 100% 100%; /* Ensure the background image covers the entire card */
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    border: 1px solid #ccc; /* Border for each card */
+    border: 1px solid transparent; /* Transparent border to prevent layout shifts */
+    box-sizing: border-box; /* Include border in the total width/height */
 }
 
 #red-cross {
