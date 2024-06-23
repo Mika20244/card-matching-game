@@ -53,7 +53,7 @@ body {
     width: calc(20% - 10px); /* Adjust card width based on container width */
     max-width: 150px; /* Limit maximum card width */
     height: 120px; /* Adjust card height for mobile */
-    background-size: cover;
+    background-size: contain; /* Ensure image fits within the card */
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
