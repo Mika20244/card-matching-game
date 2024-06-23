@@ -8,14 +8,17 @@
 </head>
 <body>
     <div class="game-container">
-        <img id="red-cross" src="redcross.png" alt="Wrong Match" class="hidden">
         <h1 class="game-title">Card Matching Game Section 1</h1>
         <div class="scoreboard">
             <div>Moves: <span id="moves">0</span></div>
-            <div>Time: <span id="timer">0</span> seconds</div>
+            <div>Timer: <span id="timer">0</span> seconds</div>
         </div>
-        <div id="cards-container" class="cards-container"></div>
+        <div class="cards-container" id="cards-container"></div>
+        <img id="red-cross" src="redcross.png" alt="Red Cross">
     </div>
+
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    
     <script src="script.js"></script>
 </body>
 </html>
